@@ -10,7 +10,7 @@ Built with **Laravel** for the backend and **Vue.js** for the frontend, Larabill
 
 - **Backend:** Laravel, PHP, REST API
 - **Frontend:** Vue.js, Vite, Axios
-- **Database:** SQLite (local) / PostgreSQL (production)
+- **Database:** SQLite (local)
 - **Tools:** Git, Composer, NPM
 
 ---
