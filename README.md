@@ -35,7 +35,7 @@ larabill/
 │   ├── database/
 │   └── composer.json
 │
-├── frontend/         # Vue.js SPA
+├── frontend/         # Vue.js
 │   ├── src/
 │   ├── package.json
 │   └── vite.config.js
