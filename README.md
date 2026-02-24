@@ -119,8 +119,6 @@ Larabill follows a decoupled architecture:
 
 ---
 
----
-
 ## Author
 
 Created by **Alfer Mercado** as a learning project for **PHP/Laravel** and **database implementation**.  
