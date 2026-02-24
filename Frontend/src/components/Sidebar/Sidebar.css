@@ -39,6 +39,10 @@
         border: 1px solid rgba(255, 255, 255, 0.079);
         background: rgba(144, 144, 144, 0.094);
       }
+
+      &:last-child {
+        display: none;
+      }
     }
   }
 
