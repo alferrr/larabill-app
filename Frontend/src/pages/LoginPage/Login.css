@@ -1,0 +1,155 @@
+:root {
+  --purp: #7733ff;
+}
+
+.login {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(../../assets/hero.png) no-repeat center/cover;
+
+  .container {
+    width: 70%;
+    height: 600px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    gap: 1em;
+    background: rgba(255, 255, 255, 0.023);
+
+    main,
+    .photo {
+      border-radius: 12px;
+      height: 100%;
+      width: 50%;
+    }
+
+    .photo {
+      background: url(../../assets/login.png) no-repeat left top/cover;
+      border: 1px solid var(--border);
+    }
+  }
+
+  main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      color: #7733ff;
+      filter: drop-shadow(0 0 20px var(--purp));
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 14px;
+      color: gray;
+    }
+
+    form {
+      position: relative;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 80%;
+
+      h4 {
+        font-weight: 400;
+      }
+      input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        color: white;
+        background: rgba(255, 255, 255, 0.01);
+        backdrop-filter: blur(10px);
+        transition: 0.3s ease;
+        border: 1px solid black;
+
+        &:focus {
+          border: 1px solid var(--purp);
+        }
+      }
+
+      button {
+        padding: 8px;
+        border-radius: 5px;
+        margin-top: 1rem;
+        border: none;
+        outline: none;
+        font-weight: 700;
+        font-family: var(--heading);
+        background: var(--purp);
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .reg {
+    margin-top: 20px;
+    font-size: 14px;
+    color: gray;
+    display: flex;
+    gap: 8px;
+    a {
+      color: #7733ff;
+      transition: 0.3s ease;
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+    }
+  }
+
+  .name {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    .input {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .photo {
+    background: var(--purp);
+  }
+}
+
+.register {
+  h4 {
+    display: none;
+  }
+
+  .input {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .login {
+    .container {
+      width: 90%;
+      height: auto;
+      padding: 3rem 1rem;
+
+      main {
+        width: 100%;
+      }
+      .photo {
+        display: none;
+      }
+    }
+  }
+}

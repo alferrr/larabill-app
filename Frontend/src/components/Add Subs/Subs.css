@@ -1,0 +1,76 @@
+.subs {
+  .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    button {
+      padding: 0 12px;
+      font-weight: 500;
+      font-family: var(--heading);
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      background: var(--purple);
+      color: black;
+      margin: 0;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    h4 {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgb(205, 205, 205);
+    }
+
+    input {
+      padding: 8px;
+      outline: none;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: none;
+      color: white;
+      font-family: var(--heading);
+
+      &.date {
+        color-scheme: dark;
+      }
+    }
+
+    .input {
+      display: flex;
+      width: 100%;
+      gap: 1em;
+
+      select {
+        width: 50%;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: none;
+        color: white;
+        padding: 8px;
+      }
+
+      input {
+        width: 50%;
+      }
+
+      .group {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        /* border: 1px solid white; */
+        gap: 8px;
+
+        input,
+        select {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --bg: #05050d;
+  --purple: #a293e6;
+  --border: rgba(255, 255, 255, 0.135);
+  --heading: "DM Sans", sans-serif;
+  --body: "Inter", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  font-family: var(--body);
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading);
+}
+
+.app {
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    /* position: sticky;
+    top: 0; */
+    display: flex;
+    align-items: center;
+    background: black;
+    z-index: 99;
+    font-family: var(--heading);
+
+    border-bottom: 1px solid var(--border);
+
+    .left {
+      width: 20%;
+    }
+
+    h1 {
+      padding: 12px 20px;
+      width: 20%;
+      border-right: 1px solid var(--border);
+    }
+
+    .userDeets {
+      padding-left: 20px;
+      display: flex;
+      gap: 1em;
+      align-items: center;
+
+      .text {
+        p {
+          font-weight: 500;
+        }
+        small {
+          color: gray;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      button {
+        padding: 3px 12px;
+        background: rgba(128, 128, 128, 0.177);
+        color: rgb(142, 142, 142);
+        font-family: var(--heading);
+        border-radius: 100px;
+        border: none;
+        cursor: pointer;
+
+        transition: 0.3s ease;
+
+        &:hover {
+          color: rgb(184, 184, 184);
+        }
+      }
+    }
+    .user {
+      width: 2rem;
+      height: 2rem;
+      color: rgb(176, 176, 176);
+    }
+  }
+
+  .main {
+    display: flex;
+  }
+  aside {
+    width: 20%;
+    /* border: 1px solid white; */
+    border-right: 1px solid var(--border);
+    height: 91vh;
+  }
+
+  main {
+    width: 80%;
+    /* border-left: 1px solid var(--border); */
+  }
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--heading);
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .app {
+    header {
+      padding: 12px 3px;
+      h1 {
+        display: none;
+      }
+    }
+    aside {
+      width: 15%;
+    }
+    main {
+      width: 85%;
+    }
+  }
+}

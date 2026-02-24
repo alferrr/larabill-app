@@ -1,0 +1,67 @@
+.sidebar {
+  position: relative;
+  header {
+    height: 10vh;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+    display: none;
+    h1 {
+      font-weight: 400;
+      display: none;
+    }
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 20px;
+
+    a {
+      padding: 12px;
+      border-radius: 8px;
+      transition: 0.3s ease;
+      width: 100%;
+      border: 1px solid black;
+      color: gray;
+      font-weight: 300;
+
+      display: flex;
+      align-items: center;
+      gap: 1em;
+
+      &:hover {
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.079);
+        background: rgba(144, 144, 144, 0.094);
+      }
+    }
+  }
+
+  .activeClass {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.079);
+    background: rgba(144, 144, 144, 0.094);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sidebar {
+    position: fixed;
+    top: 5rem;
+    .pc {
+      display: none;
+    }
+    .mobile {
+      padding: 12px 5px;
+      display: flex;
+      a {
+        justify-content: center;
+      }
+    }
+  }
+}
