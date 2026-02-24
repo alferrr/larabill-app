@@ -119,6 +119,9 @@ Larabill follows a decoupled architecture:
 
 ---
 
-## License
+---
 
-This project is distributed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+## Author
+
+Created by **Alfer Mercado** as a learning project for **PHP/Laravel** and **database implementation**.  
+You can check out my portfolio [here](https://alfermercado.com).
